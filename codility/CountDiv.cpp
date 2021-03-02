@@ -35,14 +35,17 @@ using usi = unordered_set<int>;
 #define MOD 1000000007 //10^9+7:合同式の法
 #define MAXR 100000 //10^5:配列の最大のrange
 
-int solution(int N){
-  
+int solution(int A, int B, int K){
+  int res = floor((B - (A - A % K)) * 1.0 / K);
+  if (A % K == 0) res++;
+
+  return res;
 }
 
 #ifdef THIS_IS_MY_LOCAL_PC
 int main(void) {
-  int n = 255;
-  cout << solution(n) << endl;
+  int a=6, b=11, k=2;
+  cout << solution(a, b, k) << endl;
   return 0;
 }
 #endif
