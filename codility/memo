@@ -1,5 +1,7 @@
 MissingInteger(差集合, sort, vector<int>のfilter, vector<int>の最小値検索)
 binarygap(10進数 -> 2進数, ltrim, 状態遷移図)
+GenomicRangeQuery (valarrayの減算, 要素の出現回数ctrの使用)
+
 0をN個持つようなviの初期化: vi hoge = vi(N, 0);
 valarrayの場合は逆になる: vli hoge = vli(0, N); // :thinking_face:
-GenomicRangeQuery (valarrayの減算, 要素の出現回数ctrの使用)
+valarrayにはapply()、各要素に関数を適用するものがある: varray = varray.apply([](int i) {return i+1; });
